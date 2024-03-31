@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>User Profile</title>
+        
+        <script src="https://kit.fontawesome.com/3c6f9e92a3.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../CSS/Navigation.css">
+        <link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Background.css">
+        <link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Container.css">
+        <link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Header.css">
+        <link rel="stylesheet" href="../CSS/Templated Sub CSS/Carousel-Slideshow.css">
+        <link rel="stylesheet" href="../CSS/Templated Sub CSS/Input-Fielding.css">
+        <link rel="stylesheet" href="../CSS/Templated Sub CSS/Feedback Form/Feedback-Custom.css">
+        <link rel="stylesheet" href="../CSS/userProfileCSS.css">
+
+        <link rel="stylesheet" href="../CSS/Templated Super CSS/ColumnExtension.css">
+
+    </head>
+    <body>
+
+        <div id="waterfall-2-image" class="center-fit"> 
+            <div class="caption"> 
+                <span id="net-zero" class="border"> USER PROFILE </span>
+            </div>
+        </div>
+        <nav class="main-nav">
+        
+            <p> <i class="fa-solid fa-layer-group"></i> I N F R A  </p>
+    
+            <ul>
+                <li> <a href="https://w2045929.users.ecs.westminster.ac.uk/INFRA/HTML/home.html">Home</a> </li>
+                <li> <a href="https://w2045929.users.ecs.westminster.ac.uk/INFRA/HTML/feedback.html">Feedback</a> </li>
+                <li> <a href="https://w2045929.users.ecs.westminster.ac.uk/INFRA/HTML/content_ST2.html">Gen Zero</a> </li>
+                <li> <a href="https://w2047599.users.ecs.westminster.ac.uk/INFRA/HTML/content_ST1.html">Meetings</a> </li>
+                <li> <a href="https://w2029084.users.ecs.westminster.ac.uk/INFRA/HTML/content_ST3.html">3D Printing</a> </li>
+                <li> <a href="https://w2047599.users.ecs.westminster.ac.uk/INFRA/HTML/shop.html">Store</a></li>
+                <li> <a href="https://w2029084.users.ecs.westminster.ac.uk/INFRA/HTML/profile.html">Profile</a> </li>
+                <li> <a href="https://w2029084.users.ecs.westminster.ac.uk/INFRA/HTML/team.html">Teams</a> </li>
+            </ul>
+        </nav>
+    
+        <div id="light-parallex-text-field" class="parallax-text-field">
+            <p id="light-parallex-text-header" class="parallax-text-header"> User Profile Form </p>
+            <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center"> Please complete this profile template for future use in CVs or other applications. You may revisit sections as you wish or delete any information you have already added. </p>
+    
+            <div id="error-box"> 
+                <p id="percent-text" class="parallax-text-paragraph-center">  </p>
+            </div>
+            <div id="progress-bar">
+                <div id="progress-bar-value"></div>
+                </div>
+        </div>
+        
+            <!-- First Form -->
+        <div id="light-parallex-text-field" class="parallax-text-field">
+            <p id="light-parallex-text-header" class="parallax-text-header"> User Profile Buttons </p>
+            <div class="button-parallex-text-field">
+                <button class = "user-profile-buttons" type="button" onclick="collectUserInformation1()">Start</button>
+                <button class = "user-profile-buttons" type="button" onclick="nextSet()">Next</button>
+                <button class = "user-profile-buttons" type="button" onclick="collectUserInformation1()">Part 1</button>
+                <button class = "user-profile-buttons" type="button" onclick="collectUserInformation2()">Part 2</button>
+                <button class = "user-profile-buttons" type="button" onclick="collectUserInformation3()">Part 3</button>
+                <button class = "user-profile-buttons" type="button" onclick="collectUserInformation4()">Part 4</button>
+            </div>
+        </div>
+
+    
+        <div class="containerAnswers">
+            <h2>Answers</h2>
+            <p><strong>Name: </strong>
+                <span class = "answer" id = question1></span></p>
+            <p><strong>Age: </strong>
+                <span class = "answer" id = question2></span></p>
+            <p><strong>Gender: </strong>
+                <span class = "answer" id = question3></span></p>
+            <p><strong>Phone Number: </strong>
+                <span class = "answer" id = question4></span></p>
+            <p><strong>Email: </strong>
+                <span class = "answer" id = question5></span></p>
+            <p><strong>Additional Contact information: </strong>
+                <span class = "answer" id = question6></span></p>
+            <p><strong>Postcode: </strong>
+                <span class = "answer" id = question7></span></p>
+            <p><strong>House Number: </strong>
+                <span class = "answer" id = question8></span></p>
+            <p><strong>Town: </strong>
+                <span class = "answer" id = question9></span></p>
+            <p><strong>Profession:</strong>
+                <span class = "answer" id = question10></span></p>
+            <p><strong>Level of Education: </strong>
+                <span class = "answer" id = question11></span></p>
+            <p><strong>Institution: </strong>
+                <span class = "answer" id = question12></span></p>
+                
+
+        </div>
+    
+        <div id="waterfall-2-image" class="center-fit"> 
+
+            <footer>
+
+                <div class="caption"> 
+                    <a href="#top" id="main-page-links"> <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+        </div>
+
+                <div id="dark-parallex-text-field" class="parallax-text-field">
+                    <p id="dark-parallex-text-header" class="parallax-text-header"> Page Editor </p>
+                    <p id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                        Unleash your creativity with our page editor page! Dive in to customize your experience, from layout to content, and shape our website to suit your preferences. Whether you're tweaking design elements or refining functionality, the power is in your hands. Explore endless possibilities and make our platform truly your own. With intuitive tools and seamless editing features, transforming your browsing experience has never been easier. Let's collaborate to create something uniquely yours—visit our page editor page today </p>
+                </div>
+        
+                <div id="dark-parallex-text-field" class="parallax-text-field con"> 
+                    <div class="column-left"> 
+                        <div id="dark-parallex-text-paragraph" class="parallax-text-paragraph-left"> 
+        
+                            <p style="padding-bottom: 12px;"> 
+                                <i class="fa-solid fa-envelope" id="dark-parallex-text-icon-mail"></i> ID, w2045929@westminster.ac.uk <i class="fa-solid fa-address-card" id="dark-parallex-text-address"></i> Name, Siu Kitt Wong
+                            </p>
+        
+                            <p style="padding-bottom: 12px;"> 
+                                <i class="fa-solid fa-envelope" id="dark-parallex-text-icon-mail"></i> ID, w2029084@westminster.ac.uk <i class="fa-solid fa-address-card" id="dark-parallex-text-address"></i> Name, Ashley Piper
+                            </p>
+        
+                            <p style="padding-bottom: 12px;"> 
+                                <i class="fa-solid fa-envelope" id="dark-parallex-text-icon-mail"></i> ID, w2047599@westminster.ac.uk <i class="fa-solid fa-address-card" id="dark-parallex-text-address"></i> Name, Yair 
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="column-right"> 
+                        <div id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                            <a class="dark-main-parallax-container-links" href="https://w2045929.users.ecs.westminster.ac.uk/INFRA/HTML/pageEditor_ST2.html"> PAGE EDITOR </a>
+                        </div>
+                        <div id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                            <a class="dark-main-parallax-container-links" href="https://w2029084.users.ecs.westminster.ac.uk/INFRA/HTML/pageEditor_ST3.html"> PAGE EDITOR </a>
+                        </div>
+                        <div id="dark-parallex-text-paragraph" class="parallax-text-paragraph-center"> 
+                            <a class="dark-main-parallax-container-links" href="https://w2047599.users.ecs.westminster.ac.uk/INFRA/HTML/pageEditor_ST1.html"> PAGE EDITOR </a>
+                        </div>
+                    </div> 
+                </div>
+            </footer>
+
+    </body>
+
+    <script src="../JS/userProfile.js"> </script>
+</html>

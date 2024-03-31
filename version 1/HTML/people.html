@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Logos Infrastracture </title>
+        
+
+        <link rel="stylesheet" href="../CSS/Navigation.css">
+
+<link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Background.css">
+<link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Container.css">
+<link rel="stylesheet" href="../CSS/Templated Sub CSS/Parallex-Header.css">
+<link rel="stylesheet" href="../CSS/Templated Sub CSS/Carousel-Slideshow.css">
+<link rel="stylesheet" href="../CSS/Templated Sub CSS/Input-Fielding.css">
+<link rel="stylesheet" href="../CSS/Templated Sub CSS/Feedback Form/Feedback-Custom.css">
+
+<link rel="stylesheet" href="../CSS/Templated Super CSS/ColumnExtension.css">
+        <style>
+            #progress-bar {
+                width: 100%;
+                height: 20px;
+                background-color: #f0f0f0;
+                border-radius: 10px;
+            }
+
+            #progress-bar-value {
+                width: 0%; /* Change this value dynamically with JavaScript */
+                height: 100%;
+                background-color: #4caf50;
+                border-radius: 10px;
+                transition: width 0.5s ease-in-out; /* Add smooth transition animation */
+            }
+
+            .containerButtons {
+            width: 80%;
+            height: 200px;
+            background-color: #dd6969;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px auto;
+            padding: 10px;
+            }
+            .button {
+            display: inline-block;
+            font-family: 'Grotesque-light', sans-serif;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            }
+
+            .containerAnswers {
+                font-family: 'Grotesque-light', sans-serif;
+                border: none;
+                border-radius: 4px;
+                padding: 12px;
+                width: 80%; 
+                height: 100%;
+                resize: none;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="main-nav">
+            
+            <p> I N F R A </p>
+    
+            <ul>
+                <li> <a href="">People</a> </li>
+                <li> <a href="Feedback.html">Feedback</a> </li>
+                <li> <a href="">Contact</a> </li>
+                <li> <a href="">About Us</a> </li>
+                <li> <a href="Template.html">Home</a> </li>
+            </ul>
+        </nav>
+    
+        <div id="waterfall-2-image" class="center-fit"> 
+            <div class="caption"> 
+                <span id="net-zero" class="border"> FEEDBACK </span>
+            </div>
+        </div>
+    
+        <div id="light-parallex-text-field" class="parallax-text-field">
+            <p id="light-parallex-text-header" class="parallax-text-header"> Parallax Demo </p>
+            <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center"> Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo. </p>
+    
+            <div id="error-box"> 
+                <p id="light-parallex-text-paragraph" class="parallax-text-paragraph-center"> Errors </p>
+            </div>
+            <div id="progress-bar">
+                <div id="progress-bar-value"></div>
+    
+            <br>
+            <br>
+            <br>
+            <h1>User Profile</h1>
+        
+            <!-- First Form -->
+            <div class="containerButtons" id="form1">
+                <h2>Buttons</h2>
+                <button class = "button" type="button" onclick="collectUserInformation1()">Start</button>
+                <button class = "button" type="button" onclick="nextSet()">Next</button>
+                <button class = "button" type="button" onclick="collectUserInformation1()">Set 1</button>
+                <button class = "button" type="button" onclick="collectUserInformation2()">Set 2</button>
+                <button class = "button" type="button" onclick="collectUserInformation3()">Set 3</button>
+                <button class = "button" type="button" onclick="collectUserInformation4()">Set 4</button>
+            </div>
+    
+            <div class="containerAnswers">
+                <h2>Answers</h2>
+                <p><strong>Name: </strong>
+                    <span class = "answer" id = question1></span></p>
+                <p><strong>Age: </strong>
+                    <span class = "answer" id = question2></span></p>
+                <p><strong>Gender: </strong>
+                    <span class = "answer" id = question3></span></p>
+                <p><strong>Phone Number: </strong>
+                    <span class = "answer" id = question4></span></p>
+                <p><strong>Email: </strong>
+                    <span class = "answer" id = question5></span></p>
+                <p><strong>Additional Contact information: </strong>
+                    <span class = "answer" id = question6></span></p>
+                <p><strong>Postcode: </strong>
+                    <span class = "answer" id = question7></span></p>
+                <p><strong>House Number: </strong>
+                    <span class = "answer" id = question8></span></p>
+                <p><strong>Town: </strong>
+                    <span class = "answer" id = question9></span></p>
+                <p><strong>Profession:</strong>
+                    <span class = "answer" id = question10></span></p>
+                <p><strong>Level of Education: </strong>
+                    <span class = "answer" id = question11></span></p>
+                <p><strong>Institution: </strong>
+                    <span class = "answer" id = question12></span></p>
+                    
+    
+            </div>
+
+
+
+        </div>
+    
+        <div id="waterfall-2-image" class="center-fit"> 
+        </div>
+    
+            <script src="../JS/BooleanTextAreaReaction.js"> </script>
+        </div>
+    </body>
+
+    <body>
+        
+        <nav class="main-nav">
+        
+            <p> L O G O S </p>
+    
+            <ul>
+                <li> <a href="People.html">People</a> </li>
+                <li> <a href="Feedback.html">Feedback</a> </li>
+                <li> <a href="">Contact</a> </li>
+                <li> <a href="AboutUs.html">About Us</a> </li>
+                <li> <a href="Template.html">Home</a> </li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+
+    </body>
+
+    <script>
+        // Array of questions
+        const questions = ["Part 1\nQuestion 1/3\nEnter your name:", "Part 1\nQuestion 2/3\nEnter your age:", "Part 1\nQuestion 3/3\nEnter your gender:",
+                           "Part 2\nQuestion 1/3\nEnter your phone number:", "Part 2\nQuestion 2/3\nEnter your Email:", "Part 2\nQuestion 3/3\nEnter any additional contact information:",
+                           "Part 3\nQuestion 1/3\nEnter your postcode:", "Part 3\nQuestion 2/3\nEnter your house number:", "Part 3\nQuestion 3/3\nEnter your town", 
+                           "Part 4\nQuestion 1/3\nEnter your area of profession:", "Part 4\nQuestion 2/3\nEnter your level of education:", "Part 4\nQuestion 3/3\nEnter your Intitution:"];
+        
+        // Arrays to store input data
+        const answers = new Array(12).fill("");
+
+        let set = 1;
+        let percent = 0;
+        function progressBar(index){
+            if (percent <= 99){
+                if (answers[index] === null){
+                        percent = percent;
+                }
+                else if(answers[index].trim() ===""){
+                        percent = percent;
+                }
+                else{
+                        percent = percent + (100 / 12);
+                }           
+                let progress = document.getElementById('progress-bar-value');
+                progress.style.width = percent + '%';
+            }
+        }
+
+        function nextSet(){
+
+            if (set == 2){
+                collectUserInformation2()
+
+            }
+            else if (set == 3){
+                collectUserInformation3()
+
+            }
+            else if(set == 4){
+                collectUserInformation4()
+
+            }
+
+
+        }
+        function updateQuestion(index){
+            switch (index) {
+                case 0:
+                    document.getElementById('question1').textContent = answers[index];
+                    break;
+                case 1:
+                    document.getElementById('question2').textContent = answers[index];
+                    break;
+                case 2:
+                    document.getElementById('question3').textContent = answers[index];
+                    break;
+                case 3:
+                    document.getElementById('question4').textContent = answers[index];
+                    break;
+                case 4:
+                    document.getElementById('question5').textContent = answers[index];
+                    break;
+                case 5:
+                    document.getElementById('question6').textContent = answers[index];
+                    break;
+                case 6:
+                    document.getElementById('question7').textContent = answers[index];
+                    break;
+                case 7:
+                    document.getElementById('question8').textContent = answers[index];
+                    break;
+                case 8:
+                    document.getElementById('question9').textContent = answers[index];
+                    break;
+                case 9:
+                    document.getElementById('question10').textContent = answers[index];
+                    break;
+                case 10:
+                    document.getElementById('question11').textContent = answers[index];
+                    break;
+                case 11:
+                    document.getElementById('question12').textContent = answers[index];
+                    break;
+                    
+                    
+                }
+
+        }
+
+        function collectUserInformation1() {
+            // Loop through each question in the array
+            for (let index1 = 0; index1 < 3; index1++) {
+                // Prompt the user for an answer to the current question
+                let answer = prompt(questions[index1]);
+                answers[index1] = answer;
+                progressBar(index1);
+                updateQuestion(index1);
+                console.log('inputs', answers)
+
+                console.log('Inputs:', percent);
+                
+
+                // update the user's answer to the userAnswers array
+                console.log('index=', index1)
+                
+            }
+            set = 2;
+        }
+        function collectUserInformation2() {
+
+            // Loop through each question in the array
+            for (let index2=3; index2 < 6; index2++) {
+                // Prompt the user for an answer to the current question
+                let answer = prompt(questions[index2]);
+                answers[index2] = answer;
+                progressBar(index2);
+                updateQuestion(index2);
+                console.log('Inputs:', answers);
+                
+
+                // update the user's answer to the userAnswers array
+            }
+            set = 3;
+        }
+        function collectUserInformation3() {
+
+            // Loop through each question in the array
+            for (let index3 = 6; index3 < 9; index3++) {
+                // Prompt the user for an answer to the current question
+                let answer = prompt(questions[index3]);
+                answers[index3] = answer;
+                progressBar(index3);
+                updateQuestion(index3);
+                console.log('Inputs:', answers);
+                
+
+                // update the user's answer to the userAnswers array
+                
+            }
+            set = 4;
+        }
+        function collectUserInformation4() {
+
+            // Loop through each question in the array
+            for (let index4 = 9; index4 < 12; index4++) {
+                // Prompt the user for an answer to the current question
+                let answer = prompt(questions[index4]);
+                answers[index4] = answer;   
+                progressBar(index4);  
+                updateQuestion(index4);
+                console.log('Inputs:', answers);
+                
+
+                // update the user's answer to the userAnswers array
+                
+            }
+            set = 5;
+        }
+    </script>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Forms with Dynamic Questions</title>
+    <style>
+        .form-container {
+            margin-bottom: 20px;
+        }
+        .form-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .question-label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiple Forms with Dynamic Questions</h1>
+    
+    <!-- Form 1 -->
+    <div class="form-container" id="form1Container">
+        <div class="form-box">
+            <h2>Form 1</h2>
+            <label class="question-label" id="question1"></label>
+            <form id="form1">
+                <input type="text" id="input1" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Form 2 -->
+    <div class="form-container" id="form2Container">
+        <div class="form-box">
+            <h2>Form 2</h2>
+            <label class="question-label" id="question2"></label>
+            <form id="form2">
+                <input type="text" id="input2" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Form 3 -->
+    <div class="form-container" id="form3Container">
+        <div class="form-box">
+            <h2>Form 3</h2>
+            <label class="question-label" id="question3"></label>
+            <form id="form3">
+                <input type="text" id="input3" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Form 4 -->
+    <div class="form-container" id="form4Container">
+        <div class="form-box">
+            <h2>Form 4</h2>
+            <label class="question-label" id="question4"></label>
+            <form id="form4">
+                <input type="text" id="input4" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Array of questions
+        const questions = [
+            ["Enter your name:", "Enter your email:", "Enter your phone number:"],
+            ["What's your favorite color?", "What's your age?", "What's your occupation?"],
+            ["What's your hobby?", "What's your favorite food?", "What's your favorite movie?"],
+            ["What's your favorite music genre?", "What's your dream vacation destination?", "Enter your address:"]
+        ];
+
+        // Arrays to store inputs for each form
+        const inputs = [[], [], [], []];
+
+        // Function to update questions for each form
+        function updateQuestions() {
+            for (let i = 0; i < questions.length; i++) {
+                const formContainer = document.getElementById('form' + (i + 1) + 'Container');
+                const formQuestionLabel = formContainer.querySelector('.question-label');
+                const questionIndex = inputs[i].length % questions[i].length; // Calculate question index based on input count
+                formQuestionLabel.textContent = questions[i][questionIndex];
+            }
+        }
+
+        // Call the function initially to set up the forms
+        updateQuestions();
+
+        // Add event listeners to each form for submission
+        for (let i = 0; i < questions.length; i++) {
+            const form = document.getElementById('form' + (i + 1));
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+                const input = document.getElementById('input' + (i + 1)).value;
+                inputs[i].push(input);
+                console.log('Form ' + (i + 1) + ' input:', input);
+                console.log('Form ' + (i + 1) + ' inputs:', inputs[i]);
+                // Clear input field
+                document.getElementById('input' + (i + 1)).value = '';
+                // Update questions after submission
+                updateQuestions();
+            });
+        }
+    </script>
+</body>
+</html>
+
+inputValue = document.getElementById('inputField').value;
+document.getElementById('question1').textContent = questions[index1];

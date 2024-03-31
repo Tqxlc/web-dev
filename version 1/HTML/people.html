@@ -25,11 +25,11 @@
             }
 
             #progress-bar-value {
-                width: 0%; /* Change this value dynamically with JavaScript */
+                width: 0%;
                 height: 100%;
                 background-color: #4caf50;
                 border-radius: 10px;
-                transition: width 0.5s ease-in-out; /* Add smooth transition animation */
+                transition: width 0.5s ease-in-out;
             }
 
             .containerButtons {
@@ -101,7 +101,6 @@
             <br>
             <h1>User Profile</h1>
         
-            <!-- First Form -->
             <div class="containerButtons" id="form1">
                 <h2>Buttons</h2>
                 <button class = "button" type="button" onclick="collectUserInformation1()">Start</button>
@@ -265,7 +264,6 @@
         function collectUserInformation1() {
             // Loop through each question in the array
             for (let index1 = 0; index1 < 3; index1++) {
-                // Prompt the user for an answer to the current question
                 let answer = prompt(questions[index1]);
                 answers[index1] = answer;
                 progressBar(index1);
@@ -275,7 +273,6 @@
                 console.log('Inputs:', percent);
                 
 
-                // update the user's answer to the userAnswers array
                 console.log('index=', index1)
                 
             }
@@ -285,7 +282,6 @@
 
             // Loop through each question in the array
             for (let index2=3; index2 < 6; index2++) {
-                // Prompt the user for an answer to the current question
                 let answer = prompt(questions[index2]);
                 answers[index2] = answer;
                 progressBar(index2);
@@ -293,7 +289,6 @@
                 console.log('Inputs:', answers);
                 
 
-                // update the user's answer to the userAnswers array
             }
             set = 3;
         }
@@ -301,7 +296,6 @@
 
             // Loop through each question in the array
             for (let index3 = 6; index3 < 9; index3++) {
-                // Prompt the user for an answer to the current question
                 let answer = prompt(questions[index3]);
                 answers[index3] = answer;
                 progressBar(index3);
@@ -309,7 +303,6 @@
                 console.log('Inputs:', answers);
                 
 
-                // update the user's answer to the userAnswers array
                 
             }
             set = 4;
@@ -318,7 +311,6 @@
 
             // Loop through each question in the array
             for (let index4 = 9; index4 < 12; index4++) {
-                // Prompt the user for an answer to the current question
                 let answer = prompt(questions[index4]);
                 answers[index4] = answer;   
                 progressBar(index4);  
@@ -326,7 +318,6 @@
                 console.log('Inputs:', answers);
                 
 
-                // update the user's answer to the userAnswers array
                 
             }
             set = 5;
